@@ -2,11 +2,22 @@ const App = Vue.createApp({
     data() {
         // get data from the server
         return {
-            titleText: 'This is my first Vue App!',
             name: 'MetaMxn',
             image: "https://thispersondoesnotexist.com/image",
             // select random color from the array [pink, blue]
             color: ['pink', 'blue'][Math.floor(Math.random() * 2)],
+        }
+    },
+    methods: {
+        async generateUser() {
+            console.log("Generating user...");
+            const res = await fetch("https://randomuser.me/api/");
+            const { results } = await res.json();
+            this.name = results[0].name.first;
+            this.lastName = results[0].name.last;
+            this.email = results[0].email;
+            this.image = "https://thispersondoesnotexist.com/image" + "?random=" + Math.random();
+            this.color = ['pink', 'blue'][Math.floor(Math.random() * 2)];
         }
     },
 });

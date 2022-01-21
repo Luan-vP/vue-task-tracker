@@ -12,11 +12,12 @@
         <img 
         :class="color" 
         :src="image" 
-        :alt="`${name}`"/>
+        :alt="`${name} ${lastName}`"/>
         <h1>{{name}}</h1>
         <h2>{{email}}</h2>
-
-        <button v-on:click="generate">Generate</button>
+        <div style="padding: 2rem 1.5rem;">
+            <button v-on:click="generateUser()">Generate</button>
+        </div>
 
     </div>
     

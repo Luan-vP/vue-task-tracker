@@ -1,0 +1,23 @@
+{
+  "dependencies": {
+    "vue": "^2.6.14"
+  },
+  "name": "vue-task-tracker",
+  "description": "README.md",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Luan-vP/vue-task-tracker.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Luan-vP/vue-task-tracker/issues"
+  },
+  "homepage": "https://github.com/Luan-vP/vue-task-tracker#readme"
+}
